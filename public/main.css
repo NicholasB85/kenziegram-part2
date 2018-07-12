@@ -1,0 +1,61 @@
+body {
+    background-color: lemonchiffon;
+}
+
+h1 {
+    /* position: relative;
+    text-align: center;
+    width: 40%; */
+    border: 1px solid black;
+    color:whitesmoke;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 48px;
+    height: 10vh;
+    max-width: 75vw;
+    text-align: center;
+    background: 
+    linear-gradient( #400080, transparent), 
+  
+  
+   
+    linear-gradient( 
+   200deg, #d047d1, #ff0000,    #ffff00);
+    
+}
+
+form {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.uploadButton {
+    position: absolute;
+    overflow: hidden;
+    display: inline-block;
+    
+  }
+  
+  .btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .uploadButton input[type=file] {
+    font-size: 100px;
+    position: relative;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  

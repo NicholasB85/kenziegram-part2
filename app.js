@@ -5,6 +5,10 @@ const publicPath = "public/";
 const port = 3000;
 const app = express();
 const uploadPath = "public/uploads/"
+const pug = require("pug")
+
+app.set('view engine', 'pug')
+app.set("views", "./public/views")
 
 app.use(express.static(publicPath));
 app.use(express.static(uploadPath));
@@ -21,12 +25,12 @@ app.get('/', function (req, res) {
   fs.readdir(path, function (err, items) {
     console.log(items);
     
-    res.send(`${headerTemplate} <ul>${getNumbers(items)} </ul> ` );
+    res.send(`${headerTemplate} <ul>${getPictures(items)} </ul> ` );
     
   });
 });
 
-function getNumbers(items){
+function getPictures(items){
   let result = "";
   for (item of items){
     result += `<li><img src="/uploads/${item}"</li>`

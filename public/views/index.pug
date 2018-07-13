@@ -1,0 +1,14 @@
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='/main.css')
+    title KenzieGram
+  body
+    h1 KenzieGram
+    div
+      form(action='/uploads', method='post', enctype='multipart/form-data')
+        input#myFile.btn(type='file', name='myFile')
+        .uploadButton
+          button.btn(type='submit') upload file

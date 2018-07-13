@@ -12,3 +12,7 @@ html(lang='en')
         input#myFile.btn(type='file', name='myFile')
         .uploadButton
           button.btn(type='submit') upload file
+    div
+      each photo in images
+        img(src= photo)
+        
